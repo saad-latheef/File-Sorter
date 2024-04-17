@@ -1,7 +1,6 @@
 import os
 import shutil
 
-#C:\Users\Abdullatheef-PC\OneDrive\Desktop\Scene
 
 path=input('enter the path of the folder:--')
 path=path.replace('\\','/')
@@ -20,19 +19,19 @@ for i in folder:
     if i in content:
         content.remove(i)
 
-l=[]
-s=[]
+List_=[]
+extensions_=[]
 for i in content:
     j=i.rsplit('.',1)
-    l.append(j)
-for i in l:
+    List_.append(j)
+for i in List_:
     extension= i[-1]
-    s.append(extension)
+    extensions_.append(extension)
     if not os.path.exists(path+'/file of '+extension):
         os.makedirs(path+'/file of '+extension)
 
-for i in l:
-    for j in s:
+for i in List_:
+    for j in extensions_:
         if i[-1]==j:
             
             i[-1]='.'+i[-1]
