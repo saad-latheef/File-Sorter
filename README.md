@@ -3,7 +3,7 @@ Sorts your file.... into file extension as the folder name
 
 
 
-Sorter.py is the code run in your local editor.
+file sorter.py is the code run in your local editor.
 
 Write the path for the folder you want to sort
 
